@@ -1,7 +1,7 @@
 /**
  * @name zClearVision rewrite
  * @author ClearVision Team
- * @version 1.1
+ * @version 1.0.2
  * @description Highly customizable and beautiful theme for BetterDiscord
  * @source https://github.com/ClearVision/ClearVision-v6
  * @website https://clearvision.gitlab.io
@@ -30,7 +30,7 @@
 --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
 --text-normal: rgb(220, 221, 222); /* color of default discord text */
 --text-muted:  rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
---channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+--channels-width: 240px; /* channel list width (240px for Discord default) [default: 220px] */
 --members-width: 240px; /* member list width [default: 240px] */
 
 /* APP BACKGROUND */
@@ -113,12 +113,38 @@
 /* #region Text */
 .title-31SJ6t,
 .theme-dark .mentioned-Tre-dv .mention.interactive,
-.icon-2xnN2Y path,
-.wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ .mainContent-20q_Hp .icon-2W8DHg,
-.modeConnected-NrO4cP.channelName-3KPsGw,
 .sidebar-1tnWFu .containerDefault-3TQ5YN .wrapper-1S43wv .name-3BUDLf, .sidebar-1tnWFu .containerDragAfter-1J_-1V .wrapper-1S43wv .name-3BUDLf, .sidebar-1tnWFu .containerDragBefore-ei4h1m .wrapper-1S43wv .name-3BUDLf, .sidebar-1tnWFu .containerUserOver-3woq86 .wrapper-1S43wv .name-3BUDLf {
     color: white;
     fill: white;
+}
+
+/* active vc */
+.wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ .mainContent-20q_Hp .name-28HaxV,
+.wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ .mainContent-20q_Hp .icon-2W8DHg {
+    color: white;
+}
+/* date divider */
+.content-3spvdd {
+    color:rgba( 255, 255, 255, 0.5);
+}
+/* reaction counter */
+.reaction-2A2y9y.reactionMe-3I9gFK .reactionCount-1zkLcN {
+	color: rgba(255, 255, 255, 0.7)
+}
+/* embed title */
+.embed-hKpSrO .embedAuthorNameLink-1NK1y6  {
+    color: var(--header-primary) !important;
+}
+.embed-hKpSrO .embedTitleLink-1QbYA- {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+/* attachment name */
+.anchor-1MIwyf {
+    color: rgba(255,255,255,.5);
+}
+/* typing indicator pulsing ellipsis */
+.pulsingEllipsisItem-3pNmEc {
+    background-color: white;
 }
 /* invite people link */
 .menu-1QACrS .item-1OdjEX {
@@ -127,6 +153,10 @@
 /* channel permision viewer popout */
 .FarcradaChannelTooltipClass {
     color: rgba(255,255,255,.7);
+}
+/* Activity text - Playing game/streaming */
+.container-1oeRFJ .subText-OGOWMj strong, .container-1oeRFJ .activityText-1rR-8O strong {
+    color: rgba(255, 255, 255, 0.2);
 }
 /* #endregion */
 
@@ -158,12 +188,26 @@ fill: rgba(255, 255, 255, 0.8);
     background-color: #111314;
 }
 
-
+/* active vc */
+.iconVisibility-vptxma.wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ:before{
+    background-color: var(--main-color);
+}
+.users-2JoyGL {
+    background-color: #111314;
+}
+.total-1c5KCN {
+    background-color: black;
+}
+/* vc */
+.wrapper-2fEmwW {
+    box-shadow: 0px 0px 1px 1px var(--main-color);
+}
 /* Server Channel Plugin */
 
 .childWrapper-1j_1ub {
     background-color: #111314;
 }
+
 /* #endregion */
 
 /* #region Popout Panels */
@@ -177,7 +221,6 @@ fill: rgba(255, 255, 255, 0.8);
 .header-1BR0Ro {
     color: white !important;
 }
-
 .messagesPopoutWrap-3zryHW, .recentMentionsPopout-2bI1ZN,
 .menu-1QACrS
 /*.content-1jQy2l .searchResultsWrap-5RVOkx */ {
@@ -190,6 +233,28 @@ fill: rgba(255, 255, 255, 0.8);
 .container-8Futzw,
 .popout-TdhJ6Z {
     background-color: var(--main-color);
+}
+.root-jbEB5E.flex-3BkGQD.wrap-7NZuTn.rolesList-3uZoaa.undefined,
+.FarcradaTopicClass {
+    background-color: #111314;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px var(--hover-color);
+    padding: 4px 4px 0px 4px;
+}
+.FarcradaTopicClass {
+    padding: 4px 4px 3px 4px; 
+}
+/*chat autocomplete popout */
+.autocomplete-3NRXG8 .autocompleteInner-y1mjDl {
+    background: #111314;
+}
+/* emote popout */
+.contentWrapper-3vHNP2 {
+    background-color: #111314;
+}
+/* server voice chat preview popout */
+.theme-dark .tooltip-14MtrL.tooltipPrimary-3qLMbS {
+    background: var(--main-color);
 }
 /* #endregion */
 
@@ -226,12 +291,21 @@ fill: rgba(255, 255, 255, 0.8);
     border-radius: 3px;
 }
 
+
 /* #endregion */
 
 /* #region Main Chat Panel */
 /* Title bar */
 .container-ZMc96U.themed-Hp1KC_ {
     background-color: var(--main-color);
+}
+/* help button */
+.toolbar-3_r2xA a {display: none;}
+/* remove useless chat buttons */
+button[aria-label="Send a gift"],
+button[aria-label="Open sticker picker"],
+.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F.fm-button {
+    display: none;
 }
 /* #endregion */
 
@@ -256,7 +330,6 @@ fill: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
 }*/
 /* #endregion */
-
 
 /* #region ChannelTabs-Favorite bar */
 #channelTabs-container {
@@ -390,4 +463,3 @@ margin-left: 11px !important;
     margin-left: -6px;
 }
 /* #endregion Better Jump To Present Button */
-
