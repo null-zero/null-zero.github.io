@@ -1,7 +1,7 @@
 /**
  * @name zClearVision rewrite
  * @author ClearVision Team
- * @version 6
+ * @version 1.1
  * @description Highly customizable and beautiful theme for BetterDiscord
  * @source https://github.com/ClearVision/ClearVision-v6
  * @website https://clearvision.gitlab.io
@@ -110,17 +110,25 @@
 --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
 }
 
-/* Text */
+/* #region Text */
 .title-31SJ6t,
 .theme-dark .mentioned-Tre-dv .mention.interactive,
 .icon-2xnN2Y path,
 .wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ .mainContent-20q_Hp .icon-2W8DHg,
-.modeConnected-NrO4cP.channelName-3KPsGw {
+.modeConnected-NrO4cP.channelName-3KPsGw,
+.sidebar-1tnWFu .containerDefault-3TQ5YN .wrapper-1S43wv .name-3BUDLf, .sidebar-1tnWFu .containerDragAfter-1J_-1V .wrapper-1S43wv .name-3BUDLf, .sidebar-1tnWFu .containerDragBefore-ei4h1m .wrapper-1S43wv .name-3BUDLf, .sidebar-1tnWFu .containerUserOver-3woq86 .wrapper-1S43wv .name-3BUDLf {
     color: white;
     fill: white;
 }
-
-
+/* invite people link */
+.menu-1QACrS .item-1OdjEX {
+    color: rgba(255,255,255,.7);
+}
+/* channel permision viewer popout */
+.FarcradaChannelTooltipClass {
+    color: rgba(255,255,255,.7);
+}
+/* #endregion */
 
 /* #region LOGO/TITLE BAR */
 /* clearvision logo bot */
@@ -149,6 +157,13 @@ fill: rgba(255, 255, 255, 0.8);
 .members-3WRCEx  {
     background-color: #111314;
 }
+
+
+/* Server Channel Plugin */
+
+.childWrapper-1j_1ub {
+    background-color: #111314;
+}
 /* #endregion */
 
 /* #region Popout Panels */
@@ -170,6 +185,11 @@ fill: rgba(255, 255, 255, 0.8);
 }
 .channelHeader-DFRX8q {
     background-color: rgba( 0,0,0, 0.3);
+}
+/*channel perms popup */
+.container-8Futzw,
+.popout-TdhJ6Z {
+    background-color: var(--main-color);
 }
 /* #endregion */
 
@@ -370,11 +390,4 @@ margin-left: 11px !important;
     margin-left: -6px;
 }
 /* #endregion Better Jump To Present Button */
-
-
-
-
-
-
-
 
