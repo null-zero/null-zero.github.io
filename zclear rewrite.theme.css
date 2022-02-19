@@ -256,6 +256,18 @@ fill: rgba(255, 255, 255, 0.8);
 .theme-dark .tooltip-14MtrL.tooltipPrimary-3qLMbS {
     background: var(--main-color);
 }
+
+/*stream preview */
+.theme-dark .streamPreview-I7itZ6 {
+    background-color: #111314;
+}
+/* threads popout */
+.layer-2aCOJ3 .container-18GwIk {
+    background-color: var(--main-color);
+}
+.theme-dark .modal-1Kmy_E, .theme-dark .root-g14mjS {
+    background: #111314;
+}
 /* #endregion */
 
 /* #region Server List */
@@ -275,6 +287,19 @@ fill: rgba(255, 255, 255, 0.8);
             margin-bottom: 2px;
         }
         /* #endregion */
+
+    /* serversaschannels plugin folders */
+    .styledGuildsAsChannels-DNHtg_ .wrapper-1_HaEi .childWrapper-1j_1ub {
+        width: 198px;
+    }
+    .styledGuildsAsChannels-DNHtg_ .wrapper-1_HaEi .wrapper-38slSD {
+        width: calc(100% + 1px);
+    }
+    .iconBadge-32fMme {
+        background: transparent;
+        box-shadow: none;
+    }
+
 /* #endregion */
 
 /* #region Sidebar Panel */
@@ -307,6 +332,24 @@ button[aria-label="Open sticker picker"],
 .button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F.fm-button {
     display: none;
 }
+/* send button plugin */
+.buttonWrapper-1ZmCpA[aria-label="Send Message"],
+.buttonWrapper-1ZmCpA[aria-label="Send Message"] path:nth-child(2){
+    background-color: transparent;
+    top: 10px;
+    position: sticky;
+    fill:rgba(255, 255, 255, 0.8);
+}
+.buttonWrapper-1ZmCpA[aria-label="Send Message"]:hover path:nth-child(2) {
+    fill: white;
+}
+
+
+
+/* idk fuckin some weird thing next to chat */
+:root .chat-2ZfjoI .form-3gdLxP .channelTextArea-1FufC0 .scrollableContainer-15eg7h::after, :root .chat-2ZfjoI .form-3gdLxP .wrapper-2SplAX::after {
+    display: none;
+}
 /* #endregion */
 
 /* #region Icon/Paths */
@@ -319,16 +362,51 @@ button[aria-label="Open sticker picker"],
     fill: white;
 }
 /* User Icons */
-/*.chatContent-3KubbW .avatar-2e8lTP,
-.chatContent-3KubbW .avatar-2e8lTP{
-    border-radius: 5px;
+:root .chat-2ZfjoI .form-3gdLxP .channelTextArea-1FufC0 .scrollableContainer-15eg7h::after, :root .chat-2ZfjoI .form-3gdLxP .wrapper-2SplAX::after {
+    position: absolute;
+    content: "";
+    bottom: 2px;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-secondary);
+    border-radius: calc(var(--avatar-radius) + 2px);
 }
-.wrapper-3kah-n,
-.wrapper-28eC3z,
-.icon-3AqZ2e,
-.selected-1Drb7Z {
-    border-radius: 5px;
-}*/
+:root .root-8LYsGj .topSection-13QKHs > header .header-S26rhB .mask-1FEkla foreignObject,
+.wrapper-1VLyxH foreignObject {
+    mask: none;
+    border-radius: var(--avatar-radius);
+}
+:root .profileCustomizationSection-2OOT4p .baseLayout-8AMrwn .avatarUploaderInner-p38nm2 {
+    border: none;
+    border-radius: var(--avatar-radius);
+    background-color: transparent;
+}
+:root .wrapper-1VLyxH, :root .avatar-b5OQ1N, :root .profile-1o7I_1 .avatarUploaderInner-yEhTv5,
+:root .voiceAvatar-lRbblo, :root .avatar-2e8lTP, :root .border-2BJQjd, :root .avatar-3FKimL, :root .clickableAvatar-igrb2Y,
+:root .emptyUser-2FDCJv, :root .avatar-3TrM7c, :root .wrapper-3mYmFS.ringingIncoming-fibTw-::after,
+:root .wrapper-3mYmFS.ringingOutgoing-1NjfRn::after, :root .replyAvatar-sHd2sU, :root .avatarSpeaking-33RRJU,
+:root .avatar-2EVtgZ, :root .avatarContainerMasked-13fYnN, :root .appAvatar-2_lufo {
+  border-radius: var(--avatar-radius);
+}
+/* server icons */
+:root .wrapperSimple-Js2rIO, :root .wrapper-28eC3z foreignObject,
+:root .folderIconWrapper-1oRIZr,
+:root .expandedFolderBackground-1kSAf6,
+:root .flexChild-3PzYmX .avatarUploaderInner-yEhTv5 {
+  border-radius: var(--server-radius);
+}
+:root .iconInactive-26M06U {
+    border-radius: calc(var(--server-radius) - 4px);
+}
+:root .wrapper-28eC3z:hover foreignObject {
+    border-radius: calc(var(--server-radius) - 3px);
+}
+:root .expandedFolderBackground-1kSAf6 {
+    border-radius: var(--server-radius);
+}
+
+
 /* #endregion */
 
 /* #region ChannelTabs-Favorite bar */
@@ -463,3 +541,8 @@ margin-left: 11px !important;
     margin-left: -6px;
 }
 /* #endregion Better Jump To Present Button */
+
+
+
+
+
