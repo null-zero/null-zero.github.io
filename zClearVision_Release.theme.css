@@ -9,3 +9,54 @@
 */
 
 @import url('https://null-zero.github.io/zclear%20rewrite.theme.css');
+
+:root {
+    --avatar-radius: 50%;  /* 50% for circle, 0 for square */
+    --status-radius: 50%;
+    --server-radius: 50%;
+}
+
+
+/* #region SQUARE ICON status fix. Only enable if you set avi's square
+    rect[mask="url(#svg-mask-status-dnd)"],
+    rect[mask="url(#svg-mask-status-online)"],
+    rect[mask="url(#svg-mask-status-idle)"],
+    rect[mask="url(#svg-mask-status-online-mobile)"],
+    rect[mask="url(#svg-mask-status-offline)"],
+    .pointerEvents-9SZWKj
+    {
+        mask: none;
+    }
+    .pointerEvents-9SZWKj {
+        stroke:black;
+        stroke-width: 2px;
+        margin-bottom: 1px;
+        rx: var(--avatar-radius);
+        ry: var(--avatar-radius);
+    }
+    .wrapper-1VLyxH[aria-label*="Online"] rect.pointerEvents-9SZWKj:not([width="25"]) {
+        fill: var(--online-color);
+    }
+    .wrapper-1VLyxH[aria-label*="Idle"] rect.pointerEvents-9SZWKj:not([width="25"]) {
+        fill: var(--idle-color);
+    }
+    .wrapper-1VLyxH[aria-label*="Do Not Disturb"] rect.pointerEvents-9SZWKj:not([width="25"]) {
+        fill: var(--dnd-color);
+    }
+
+    .wrapper-1VLyxH[aria-label*="mobile"] rect.pointerEvents-9SZWKj[height="15"] {
+        height: 10px;
+        x: 22px;
+        y: 22px;
+    }
+    .wrapper-1VLyxH[aria-label*="mobile"] rect.pointerEvents-9SZWKj[height="24"] {
+        height: 16px;
+        x: 60px;
+        y: 60px;
+    }
+    .wrapper-1VLyxH[aria-label*="mobile"] rect.pointerEvents-9SZWKj[height="36"] {
+        height: 24px;
+        x: 88px;
+        y: 88px;
+    }
+/* #endregion */
