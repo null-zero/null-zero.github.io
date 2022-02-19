@@ -334,8 +334,7 @@ button[aria-label="Open sticker picker"],
 }
 /* send button plugin */
 .buttonWrapper-1ZmCpA[aria-label="Send Message"],
-.buttonWrapper-1ZmCpA[aria-label="Send Message"] path:nth-child(2),
-div.buttonContainer-28fw2U.da-buttonContainer.send-button path:nth-child(2){
+.buttonWrapper-1ZmCpA[aria-label="Send Message"] path:nth-child(2){
     background-color: transparent;
     top: 10px;
     position: sticky;
