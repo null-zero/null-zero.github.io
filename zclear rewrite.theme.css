@@ -33,6 +33,7 @@
 --channels-width: 240px; /* channel list width (240px for Discord default) [default: 220px] */
 --members-width: 240px; /* member list width [default: 240px] */
 
+
 /* APP BACKGROUND */
 --background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
 --background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
@@ -343,9 +344,10 @@ button[aria-label="Open sticker picker"],
 .buttonWrapper-1ZmCpA[aria-label="Send Message"]:hover path:nth-child(2) {
     fill: white;
 }
-
-
-
+/*embed background */
+.embed-hKpSrO {
+    background: transparent;
+}
 /* idk fuckin some weird thing next to chat */
 :root .chat-2ZfjoI .form-3gdLxP .channelTextArea-1FufC0 .scrollableContainer-15eg7h::after, :root .chat-2ZfjoI .form-3gdLxP .wrapper-2SplAX::after {
     display: none;
@@ -541,8 +543,6 @@ margin-left: 11px !important;
     margin-left: -6px;
 }
 /* #endregion Better Jump To Present Button */
-
-
 
 
 
