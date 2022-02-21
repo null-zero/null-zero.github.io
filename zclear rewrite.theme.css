@@ -1,7 +1,7 @@
 /**
  * @name zClearVision rewrite
  * @author ClearVision Team
- * @version 1.0.2
+ * @version 1.0.3
  * @description Highly customizable and beautiful theme for BetterDiscord
  * @source https://github.com/ClearVision/ClearVision-v6
  * @website https://clearvision.gitlab.io
@@ -513,7 +513,7 @@ margin-left: 11px !important;
     right: 22px;
     padding: 8px !important;
     height: auto;
-    background-color: #5865F2;
+    background-color: var(--main-color);
     box-shadow: var(--elevation-high);
     border-radius: 100px;
     display: flex;
