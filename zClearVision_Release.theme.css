@@ -1,7 +1,7 @@
 /**
  * @name zClearVision rewrite release
  * @author ClearVision Team + ndot
- * @version 1
+ * @version 1.0.2
  * @description Highly customizable and beautiful theme for BetterDiscord
  * @source https://github.com/ClearVision/ClearVision-v6
  * @website https://clearvision.gitlab.io
@@ -11,9 +11,9 @@
 @import url('https://null-zero.github.io/zclear%20rewrite.theme.css');
 
 :root {
-    --avatar-radius: 50%;  /* 50% for circle, 0 for square */
-    --status-radius: 50%;
-    --server-radius: 50%;
+    --avatar-radius: 50%;   /* 50% for circle, 0 for square */   /* sq recommendations 3px */  
+    --status-radius: 50%;   /* sq recommendations 3px */  
+    --server-radius: 50%;   /* sq recommendations 8px */  
 }
 
 
