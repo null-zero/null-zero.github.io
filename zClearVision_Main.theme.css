@@ -1,7 +1,7 @@
 /**
  * @name zClearVision Main
  * @author ClearVision Team + ndot
- * @version 1.0.5
+ * @version 1.0.6
  * @description Highly customizable and beautiful theme for BetterDiscord
  * @source https://github.com/ClearVision/ClearVision-v6
  * @website https://clearvision.gitlab.io
@@ -133,6 +133,7 @@
 .reaction-2A2y9y.reactionMe-3I9gFK .reactionCount-1zkLcN {
 	color: rgba(255, 255, 255, 0.7)
 }
+
 /* embed title */
 .embed-hKpSrO .embedAuthorNameLink-1NK1y6  {
     color: var(--header-primary) !important;
@@ -207,7 +208,83 @@ fill: rgba(255, 255, 255, 0.8);
 /* Server Channel Plugin */
 
 .childWrapper-1j_1ub {
-    background-color: #111314;
+    /*background-color: #111314;*/
+    background-color: rgba( 0, 0, 0, 0.6);
+    border: 1px solid var(--main-color);
+    margin-left: 8px;
+}
+
+.scroller-3X7KbA.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
+    width: 240px;
+
+    margin: auto;
+}
+.styledGuildsAsChannels-DNHtg_ .wrapper-1_HaEi .expandedFolderBackground-1kSAf6 {
+    width: 205px;
+    margin-left: 4px;
+}
+.expandedFolderBackground-1kSAf6 {
+    background-color: var(--main-color);
+    
+}
+.unreadMentionsBar-ZXXoOH.mention-3XBnnZ {
+    background-color: var(--status-danger);
+}
+.wrapper-1_HaEi.guilds-2JjMmN div[aria-label="Servers"] .wrapper-38slSD .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) + .listItem-3SmSlK {
+    padding-top: 0.5em;
+    padding-bottom:0.05em;
+    margin-top: 1em;
+
+}
+
+.wrapper-3kah-n:hover .childWrapper-1j_1ub, .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
+    border: 1px solid rgba( 255, 255, 255, 0.4);
+}
+
+.styledGuildsAsChannels-DNHtg_ .wrapper-1_HaEi .placeholderMask-2FHNZU, .styledGuildsAsChannels-DNHtg_ .wrapper-1_HaEi .wrapper-3kah-n, .styledGuildsAsChannels-DNHtg_ .wrapper-1_HaEi .folder-241Joy, .styledGuildsAsChannels-DNHtg_ .wrapper-1_HaEi .circleIconButton-1VxDrg, .styledGuildsAsChannels-DNHtg_ .wrapper-1_HaEi .guildsError-YJjW3A {
+    border-radius: none !important;
+}
+
+.wrapper-1_HaEi.guilds-2JjMmN div[aria-label="Servers"] .wrapper-38slSD .childWrapper-1j_1ub {
+    background-color: rgba( 0, 0, 0, 0.85);
+    border: 1px solid rgba( 255, 255, 255, 0.4);
+}
+
+.wrapper-1_HaEi.guilds-2JjMmN div[aria-label="Servers"] .wrapper-38slSD .expandedFolderBackground-1kSAf6 + .listItem-3SmSlK .folder-241Joy {
+    background: linear-gradient(var(--main-color), var(--main-color)) 8px top no-repeat, linear-gradient(var(--main-color), var(--main-color)) right no-repeat, linear-gradient(var(--main-color), var(--main-color)) 8px bottom no-repeat, linear-gradient(var(--main-color), var(--main-color)) 8px no-repeat, linear-gradient(rgba( 0, 0, 0, 0.85), rgba( 0, 0, 0, 0.85)) 8px no-repeat;
+    background-size:  100% 1px, 1px 100%, 100% 1px, 1px 100%, 100%;
+    
+}
+.wrapper-1_HaEi.guilds-2JjMmN div[aria-label="Servers"] .wrapper-38slSD .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) + .listItem-3SmSlK .folder-241Joy {
+    background: linear-gradient(rgba( 255, 255, 255, 0.4), rgba( 255, 255, 255, 0.4)) 8px top no-repeat, linear-gradient(rgba( 255, 255, 255, 0.4), rgba( 255, 255, 255, 0.4)) right no-repeat, linear-gradient(rgba( 255, 255, 255, 0.4), rgba( 255, 255, 255, 0.4)) 8px bottom no-repeat, linear-gradient(rgba( 255, 255, 255, 0.4), rgba( 255, 255, 255, 0.4)) 8px no-repeat, linear-gradient(rgba( 0, 0, 0, 0.85), rgba( 0, 0, 0, 0.85)) 8px no-repeat;
+    background-size:  100% 1px, 1px 100%, 100% 1px, 1px 100%, 100%;
+}
+
+.wrapper-1_HaEi.guilds-2JjMmN div[aria-label="Servers"] .wrapper-38slSD .expandedFolderBackground-1kSAf6 + .listItem-3SmSlK .childWrapper-1j_1ub {
+    background: none;
+    border: none;
+}
+
+.wrapper-1_HaEi.guilds-2JjMmN div[aria-label="Servers"] .wrapper-38slSD .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) + .listItem-3SmSlK > div:nth-child(2) {
+    padding-bottom: 0.7em;
+    background: linear-gradient(black,black) bottom /* left or right or else */ no-repeat;
+    background-size:75% 2px;
+
+}
+
+
+.wrapper-1_HaEi.guilds-2JjMmN div[aria-label="Servers"] .wrapper-38slSD .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) + .listItem-3SmSlK + ul {
+    padding-bottom: 0.016px;
+    margin-bottom: 1em;
+}
+
+
+.wrapper-1_HaEi.guilds-2JjMmN {
+    width: var(--channels-width) !important;
+}
+
+.tree-3agP2X {
+    margin: auto;
 }
 
 /* #endregion */
@@ -263,6 +340,11 @@ fill: rgba(255, 255, 255, 0.8);
 .theme-dark .streamPreview-I7itZ6 {
     background-color: #111314;
 }
+/* vc allowed roles poput */
+.FarcradaChannelTooltipClass {
+    padding-top: 10px;
+    padding-bottom: .05rem;
+}
 /* threads popout */
 .layer-2aCOJ3 .container-18GwIk {
     background-color: var(--main-color);
@@ -270,7 +352,9 @@ fill: rgba(255, 255, 255, 0.8);
 .theme-dark .modal-1Kmy_E, .theme-dark .root-g14mjS {
     background: #111314;
 }
+
 /* #endregion */
+
 
 /* #region Server List */
     .item-2LIpTv {
@@ -317,8 +401,10 @@ fill: rgba(255, 255, 255, 0.8);
 .container-YkUktl>.flex-3BkGQD, .container-1zzFcN>.flex-3BkGQD {
     border-radius: 3px;
 }
-
-
+/*server admin icon */
+.ownerIcon-255uKo.icon-1dGlZy {
+    padding-right: 5px;
+}
 /* #endregion */
 
 /* #region Main Chat Panel */
@@ -404,7 +490,7 @@ button[aria-label="Open sticker picker"],
 :root .folderIconWrapper-1oRIZr,
 :root .expandedFolderBackground-1kSAf6,
 :root .flexChild-3PzYmX .avatarUploaderInner-yEhTv5 {
-  border-radius: var(--server-radius);
+    border-radius: var(--server-radius);
 }
 :root .iconInactive-26M06U {
     border-radius: calc(var(--server-radius) - 4px);
@@ -551,4 +637,3 @@ margin-left: 11px !important;
     margin-left: -6px;
 }
 /* #endregion Better Jump To Present Button */
-
